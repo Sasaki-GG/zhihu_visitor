@@ -1,0 +1,17 @@
+{
+  "name": "fxxk_zhihu_visitor_demo",
+  "manifest_version":2,
+  "version": "1.0.0",
+  "description": "Chrome扩展屏蔽知乎登录demo",
+  "browser_action":
+  {
+      "default_popup": "gg.jpg"
+  },
+  "content_scripts": [ 
+    {
+      "matches": ["https://www.zhihu.com/*"],
+      "js": [ "js/zhihu_visitor.js" ],
+      "run_at": "document_idle"
+    }
+  ]
+}
