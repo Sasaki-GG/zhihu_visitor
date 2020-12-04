@@ -4,5 +4,5 @@ var p = document.documentElement;
 p.style = "";
 // get class of log-in interface
 setTimeout(function () {
-    document.body.lastChild.remove();
+    document.getElementsByClassName("Modal-wrapper undefined Modal-enter-done").item(0).className = "";
 }, 1000);
